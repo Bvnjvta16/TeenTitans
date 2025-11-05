@@ -1,0 +1,345 @@
+  /*Fuente Colores*/
+
+  :root {
+    --fuente-heroes:"Permanent Marker", cursive;
+    --fuente-descripcion:"Anton", sans-serif;
+  }
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+
+  body{
+      margin: 0px; 
+
+    }
+
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #b40000;
+      padding: 10px 20px;
+    }
+    
+    .logo {
+      font-weight: bold;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.8rem;
+    }
+    nav ul li a:hover {
+      color: black;
+    }
+
+  .logo > img {
+      width: 4.8rem;
+  }
+
+  .titulo-descripcion {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+
+
+  .low-nav {
+      background-image: url(../img/teentitans-fondo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #f0f0f0;
+      height: 94rem;
+      padding-top: 2rem;
+      
+  }
+  .texto-info {
+    margin-left: 4rem;
+  }
+  .texto-info > img {
+    width: 56rem;
+    border-radius: 2rem;  
+  }
+
+
+  .container {
+      background-image: url(../img/foto_negro.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: #f0f0f0;
+      height: 100%;
+      width: 100%;
+      padding-top: 2rem;
+  } 
+  /* table, th, td {
+      border: 1px solid rgb(15, 15, 15);
+      border-radius: 2rem;
+    } */
+    .personajes-descripcion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .personaje {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      position: relative;
+      margin-bottom: 8rem;
+      flex-wrap: wrap;
+    }
+    
+    
+    .personaje .imagen {
+      position: relative;
+    }
+    
+    .personaje .imagen img {
+      width: 30rem;
+      height: auto;
+      display: block;
+    }
+
+    .personaje .imagen-chicobestia img {
+      width: 20rem;
+    }
+
+    .personaje .imagen-starfire img {
+      width: 12.4rem;
+    }
+
+    .personaje .imagen-raven img {
+      width: 24rem;
+    }
+
+
+    .personaje .descripcion {
+      font-size: 2rem;
+      font-family: var(--fuente-descripcion);
+      text-align: center;
+      border-radius: 10rem;
+      padding: 1rem 3rem;
+      color:red;
+    }
+    
+    .personaje .web {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+    
+    .personaje .web svg {
+      transition: transform 0.3s, color 0.3s;
+    }
+    
+
+    .personaje .web svg:hover {
+      color: yellow;
+      transform: scale(1.2);
+    }
+
+  p {
+    max-width: 50rem;
+  }
+    
+    
+  .descripcion-robin, .descripcion-cyborg, .descripcion-chicobestia, .descripcion-starfire, .descripcion-raven, .titulo-descripcion {
+    color: red;
+    font-size:2rem;
+    font-family: var(--fuente-descripcion);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+  }
+
+  .web-robin, .web-cyborg {
+    display: flex;
+    justify-self: center;
+    align-self: flex-end;
+  }
+
+  .abajo-web {
+    background-color: gray;
+    height: 40rem;
+    font-family: var(--fuente-heroes);  
+    font-size: 20rem;
+    text-align: center;
+  }
+
+  .parrafo-robin, .parrafo-raven, .parrafo-starfire, .parrafo-chico, .parrafo-cyborg {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .parrafo-robin {
+    color: #c20a0a;
+  }
+
+  .parrafo-cyborg {
+    color: #c0c0c0;
+  }
+
+  .parrafo-chico {
+    color: #028002;
+  }
+
+  .parrafo-starfire {
+    color: #ff83f5;
+  }
+
+  .parrafo-raven {
+    color: #aa00aa;
+  }
+  @media screen and (max-width: 768px) { 
+    .low-nav {
+      background-image: url(../img/foto_negro.jpg);
+      height: 100%;
+    }
+
+    .texto-info {
+      text-align: center;
+      margin-left: 0rem;
+    }
+
+
+    .texto-info > img {
+      width: 80%;
+    }
+
+    .personaje .imagen-chicobestia img {
+      width: 20rem;
+    }
+
+    .container {
+      height: 100%;
+      width: 100%;
+    }
+
+    .personajes-descripcion {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .descripcion-robin, .descripcion-chicobestia, .descripcion-cyborg, .descripcion-raven, .descripcion-starfire  {
+      background-color: black;
+    }
+
+    .web-robin, .web-cyborg, .web-raven {
+      margin-right: 10rem;
+    }
+
+    .personaje {
+      flex-direction: column;
+    }
+  
+    .personaje .web {
+      top: auto;
+      bottom: 1rem;
+      right: 1rem;
+    }
+
+    #raven {
+      background-color: purple;
+      border-radius: 10rem;
+      margin-right: 10rem;
+      padding: 1.2rem;
+    }
+
+    #chicobestia {
+      background-color: green;
+      border-radius: 10rem;
+      padding: 1.2rem;
+    }
+
+    #cyborg {
+      border-radius: 10rem;
+      padding: 1.2rem;
+    }
+
+    #robin {
+      border-radius: 10rem;
+      padding: 1.2rem;
+    }
+
+    #starfire {
+      background-color: pink;
+      border-radius: 10rem;
+      margin-right: 10rem;
+      padding: 1.2rem;
+    }
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+/*Fuente*/
+
+
+
+  .rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
+
