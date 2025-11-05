@@ -43,7 +43,7 @@ body {
     padding: 6rem;
 }
 
-.imagen1 {
+.encabezado > .imagen1 {
     display: flex;
     width: 9rem;
 }
@@ -152,6 +152,11 @@ h2 {
 #holas:target {
     border-radius: 40%;
     border: solid 3px #00cccc;
+}
+
+article p a:focus{
+    background-color: #00cccc;
+    color: blue;
 }
 
 @media (max-width: 1024px) {
@@ -266,11 +271,10 @@ h2 {
         font-size: 2rem;
     }
 
-    .imagen1 {
+    .encabezado > .imagen1 {
         display: flex;
-        width: 4rem;
-        height: 4rem;
-        transform: translateX(-100%);
+        width: 5rem;
+        transform: translateX(-80%);
     }
 
     .casa {
@@ -305,4 +309,5 @@ h2 {
     .icono-link {
         width: 6rem;
     }
+
 }
