@@ -74,7 +74,7 @@ nav a > .casa:active {
 
 .imagen3:target {
     border-radius: 40%;
-    border: solid 10px #a03ff0;
+    border: solid 15px red;
 }
 
 
@@ -218,6 +218,7 @@ footer.footer {
         text-align: center;
     }
 }
+
 
 
 
