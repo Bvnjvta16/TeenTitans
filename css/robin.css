@@ -178,7 +178,9 @@ footer a:hover{
 #hola:focus{
     color: green;
 }
-
+.icono.profe{
+    justify-content: center ;
+}
 
 
 
@@ -207,3 +209,4 @@ footer a:hover{
     }
 
 }
+
