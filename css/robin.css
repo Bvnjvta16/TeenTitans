@@ -179,8 +179,10 @@ footer a:hover{
     color: green;
 }
 .icono.profe{
-    justify-content: center ;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    
 }
 
 
@@ -210,5 +212,6 @@ footer a:hover{
     }
 
 }
+
 
 
