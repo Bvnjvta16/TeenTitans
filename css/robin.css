@@ -32,7 +32,7 @@ html {
 
 }
 .arriba{
-    background: linear-gradient(black , #b40000);
+    color: var(--amarillo);
 }
 
 nav {
@@ -215,6 +215,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
