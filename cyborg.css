@@ -251,23 +251,24 @@ article p a:focus{
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     .section1 {
         display: flex;
         margin: 0rem 0rem 2rem 0rem;
-        transform: translateX(1700%);
+        transform: translateX(1900%);
         width: 1rem;
         gap: 3rem;
     }
 
     .imagen2 {
-        transform: translateX(14%);
+        transform: translateX(8%);
         width: 40rem;
         height: 40rem;
         margin: 0rem;
     }
 
     .titulo {
+        transform: translateX(12%);
         font-size: 2rem;
     }
 
@@ -302,7 +303,7 @@ article p a:focus{
         align-items: center;
         color: #00cccc;
         transform: translateX(0%);
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: "Permanent Marker", cursive;
         font-weight: 100;
     }
