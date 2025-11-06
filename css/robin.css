@@ -113,7 +113,7 @@ footer{
     display: flex;
     gap: 5rem;
     flex-direction: column;
-    alings-text: center;
+    align-text: center;
 
 }
 
@@ -123,6 +123,7 @@ footer{
     border-radius: 15px;
     max-width: 60rem;
     transition: 0.3s;
+    align-text: center;
 }
 
 .texto p:hover{
@@ -214,6 +215,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
