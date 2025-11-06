@@ -281,7 +281,8 @@
     }
 
     .abajo-web {
-      font-size: 10rem;
+      font-size: 4rem;
+      height: 10rem;
     }
 
     .personaje {
@@ -380,6 +381,7 @@
     font-style: normal;
   }
   
+
 
 
 
