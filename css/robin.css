@@ -29,7 +29,7 @@ html {
     font-style: normal;
     font-size: 40px;
     color: #e2e200;
-    color : var(--color-fondo);
+    color : var(--amarillo);
 
 }
 .arriba{
@@ -107,7 +107,7 @@ footer{
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 5rem;
-    aling-text: center;
+    align-text: center;
 }
 
 .texto {
@@ -216,6 +216,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
