@@ -112,6 +112,7 @@ footer{
     display: flex;
     gap: 5rem;
     flex-direction: column;
+    alings-items: center;
 
 }
 
@@ -212,6 +213,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
