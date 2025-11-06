@@ -56,6 +56,9 @@
     nav ul li a:target {
       color: green;
     }
+    nav ul li a:focus {
+      color: green
+    }
 
   .logo > img {
       width: 4.8rem;
@@ -381,6 +384,7 @@
     font-style: normal;
   }
   
+
 
 
 
