@@ -1,11 +1,10 @@
-/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* SELECTOR DESCENDENTE */
+
 html {
     font-size: 62.5%;
 }
@@ -15,12 +14,12 @@ body {
     background-color: var(--color-fondo);
 }
 
-/* VARIABLES */
+
 :root {
     --color-fondo: #a6f093;
 }
 
-/* ENCABEZADO Y ELEMENTOS HIJOS */
+
 header.encabezado {
     display: flex;
     align-items: center;
@@ -30,12 +29,12 @@ header.encabezado {
     position: relative;
 }
 
-/* SELECTOR DE HIJO DIRECTO */
+
 .encabezado > img.imagen1 {
     width: 9rem;
 }
 
-/* SELECTOR DESCENDENTE Y MÚLTIPLE */
+
 .encabezado .titulo, footer p {
     font-family: "Permanent Marker", cursive;
     color: white;
@@ -49,7 +48,7 @@ header.encabezado {
     transform: translateX(-2%);
 }
 
-/* ICONO CASA */
+
 nav a > .casa {
     color: white;
     transition: color 0.3s;
@@ -68,7 +67,7 @@ nav a > .casa:active {
     transition: 0.3s;
 }
 
-/* LINK DE PIE DE PÁGINA */
+
 #link {
     transition: 0.5s;
 }
@@ -78,7 +77,7 @@ nav a > .casa:active {
     border: solid 3px #a03ff0;
 }
 
-/* IMÁGENES */
+
 .section img.imagen2 {
     border-radius: 10%;
     height: 80rem;
@@ -91,7 +90,6 @@ footer > img.imagen3 {
     height: 10rem;
 }
 
-/* CONTENEDOR Y ARTÍCULOS */
 .section > .contenedor {
     display: flex;
     flex-direction: column;
@@ -106,7 +104,7 @@ footer > img.imagen3 {
     color: #f7f7f7;
 }
 
-/* PIE DE PÁGINA */
+
 footer.footer {
     background: linear-gradient(#a6f093, #a03ff0);
     display: flex;
@@ -118,7 +116,7 @@ footer.footer {
     align-items: center;
 }
 
-/* SECCIÓN PRINCIPAL */
+
 .section {
     display: flex;
     justify-content: center;
@@ -129,7 +127,7 @@ footer.footer {
 
 /* MEDIA QUERIES */
 
-/* Laptop */
+
 @media (max-width: 1024px) {
     body {
         background-color: var(--color-fondo);
@@ -150,7 +148,7 @@ footer.footer {
     }
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
     .section {
         display: flex;
@@ -184,7 +182,7 @@ footer.footer {
     }
 }
 
-/* Móvil */
+
 @media (max-width: 480px) {
     body {
         background-color: var(--color-fondo);
@@ -210,4 +208,9 @@ footer.footer {
         padding: 1.5rem;
         width: auto;
     }
+
+    footer {
+        text-aling: center;
+    }
 }
+
