@@ -145,7 +145,7 @@ footer.footer {
 
     section.section {
         margin-top: 5rem;
-        margin-left: 2rem;
+        margin-left: 0rem;
     }
 
     section.section article {
@@ -218,6 +218,7 @@ footer.footer {
         text-align: center;
     }
 }
+
 
 
 
