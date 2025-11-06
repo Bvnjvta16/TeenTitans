@@ -21,7 +21,7 @@ html {
     box-sizing: border-box;
 }
 
-.titulo{
+.titulo , .icono.profe{
     justify-content: center;
     display: flex;
     font-family: "Permanent Marker", cursive;
@@ -212,6 +212,7 @@ footer a:hover{
     }
 
 }
+
 
 
 
