@@ -280,6 +280,10 @@
       margin-right: 10rem;
     }
 
+    .abajo-web {
+      font-size: 10rem;
+    }
+
     .personaje {
       flex-direction: column;
     }
@@ -376,5 +380,6 @@
     font-style: normal;
   }
   
+
 
 
