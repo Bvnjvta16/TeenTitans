@@ -53,6 +53,10 @@
       color: black;
     }
 
+    nav ul li a:target {
+      color: green;
+    }
+
   .logo > img {
       width: 4.8rem;
   }
@@ -61,6 +65,7 @@
     margin-top: 10rem;
     margin-bottom: 10rem;
   }
+
 
 
   .low-nav {
@@ -73,6 +78,8 @@
       padding-top: 2rem;
       
   }
+
+
   .texto-info {
     margin-left: 4rem;
   }
@@ -185,7 +192,7 @@
   }
 
   .abajo-web {
-    background-color: gray;
+    background-color: #ff2d2d;
     height: 40rem;
     font-family: var(--fuente-heroes);  
     font-size: 20rem;
@@ -216,6 +223,24 @@
 
   .parrafo-raven {
     color: #aa00aa;
+  }
+
+
+
+
+  .seccion {
+    background-image: url("../img/teentitans-imagenfixed.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 14rem;
+  }
+  @media screen and (max-width: 1024px){
+    .abajo-web {
+      height: 60rem;
+    }
+    
   }
   @media screen and (max-width: 768px) { 
     .low-nav {
@@ -298,6 +323,16 @@
 
 
 
+  }
+
+  @media screen and (max-width: 320px){
+    .titulo-descripcion > img {
+      width: 24rem;
+    }
+
+    p {
+      max-width: 40rem;
+    }
   }
 
 
