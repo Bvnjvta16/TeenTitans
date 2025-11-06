@@ -1,38 +1,27 @@
+/* RESET GENERAL */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* SELECTOR DESCENDENTE */
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 16px;
+    background-color: var(--color-fondo);
 }
 
-/* SEPARACION */
-
+/* VARIABLES */
 :root {
     --color-fondo: #a6f093;
 }
 
-body {
-    background-color: var(--color-fondo);
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    font-family: "Permanent Marker", cursive;
-    font-weight: 500;
-    color: white;
-    font-size: 3.5rem;
-    transform: translateX(-2%);
-}
-
-.encabezado {
+/* ENCABEZADO Y ELEMENTOS HIJOS */
+header.encabezado {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,28 +30,45 @@ body {
     position: relative;
 }
 
-.imagen1 {
+/* SELECTOR DE HIJO DIRECTO */
+.encabezado > img.imagen1 {
     width: 9rem;
 }
 
-.casa {
+/* SELECTOR DESCENDENTE Y MÚLTIPLE */
+.encabezado .titulo, footer p {
+    font-family: "Permanent Marker", cursive;
+    color: white;
+}
+
+.encabezado .titulo {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 3.5rem;
+    transform: translateX(-2%);
+}
+
+/* ICONO CASA */
+nav a > .casa {
     color: white;
     transition: color 0.3s;
     margin: 2rem;
 }
 
-.casa:hover {
+nav a > .casa:hover {
     color: #5f01da;
     transform: scale(1.2);
     transition: transform 0.3s;
 }
 
-.casa:active {
-    color:#4ac92b;
+nav a > .casa:active {
+    color: #4ac92b;
     transform: scale(1.2);
     transition: 0.3s;
 }
 
+/* LINK DE PIE DE PÁGINA */
 #link {
     transition: 0.5s;
 }
@@ -72,25 +78,36 @@ body {
     border: solid 3px #a03ff0;
 }
 
-.imagen2 {
+/* IMÁGENES */
+.section img.imagen2 {
     border-radius: 10%;
     height: 80rem;
     width: 100%;
 }
 
-.imagen3 {
+footer > img.imagen3 {
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
 }
 
-.contenedor{
+/* CONTENEDOR Y ARTÍCULOS */
+.section > .contenedor {
     display: flex;
     flex-direction: column;
     gap: 5rem;
 }
 
-footer {
+.section article {
+    width: 80rem;
+    background: linear-gradient(#a03ff0a9, #5f01dab4);
+    border-radius: 2rem;
+    padding: 2rem;
+    color: #f7f7f7;
+}
+
+/* PIE DE PÁGINA */
+footer.footer {
     background: linear-gradient(#a6f093, #a03ff0);
     display: flex;
     justify-content: space-between;
@@ -101,6 +118,7 @@ footer {
     align-items: center;
 }
 
+/* SECCIÓN PRINCIPAL */
 .section {
     display: flex;
     justify-content: center;
@@ -109,36 +127,31 @@ footer {
     font-size: 2.6rem;
 }
 
-article {
-    width: 80rem;
-    background:linear-gradient(#a03ff0a9, #5f01dab4) ;
-    border-radius: 2rem;
-    padding: 2rem;
-    color: #f7f7f7
-}
+/* MEDIA QUERIES */
 
+/* Laptop */
 @media (max-width: 1024px) {
     body {
         background-color: var(--color-fondo);
     }
 
-    .encabezado{
+    header.encabezado {
         gap: 6rem;
         text-align: center;
     }
 
-    .section{
+    section.section {
         margin-top: 5rem;
         margin-left: 2rem;
     }
 
-    article{
-        max-width: 500px;  
+    section.section article {
+        max-width: 500px;
     }
 }
 
+/* Tablet */
 @media (max-width: 768px) {
-
     .section {
         display: flex;
         flex-direction: column-reverse;
@@ -146,57 +159,55 @@ article {
         gap: 2rem;
     }
 
-    .imagen1 {
+    header.encabezado > img.imagen1 {
         width: 5rem;
         height: 5rem;
         margin: 2.5rem;
     }
 
-    .casa{
+    nav a > .casa {
         width: 5rem;
         height: 5rem;
     }
 
-    .imagen2 {
+    .section img.imagen2 {
         width: 30rem;
         height: 30rem;
     }
 
-    .titulo {
-        font-size: 2.5rem;    
+    .encabezado .titulo {
+        font-size: 2.5rem;
     }
 
     .encabezado h1 {
         justify-content: center;
     }
-
 }
 
+/* Móvil */
 @media (max-width: 480px) {
     body {
         background-color: var(--color-fondo);
     }
 
-    .imagen1 {
+    header.encabezado > img.imagen1 {
         margin: 2rem;
     }
 
-    .titulo{
+    .encabezado .titulo {
         font-size: 1.8rem;
     }
+
     .section {
-        display: flex;
         flex-direction: column-reverse;
         font-size: 1.5rem;
         gap: 2rem;
-        padding: 0 1.5rem; 
+        padding: 0 1.5rem;
     }
 
-    .article {
-        margin: 0 1rem; 
-        padding: 1.5rem; 
-        width: auto; 
+    .section article {
+        margin: 0 1rem;
+        padding: 1.5rem;
+        width: auto;
     }
 }
-
-
