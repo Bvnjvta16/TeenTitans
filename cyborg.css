@@ -285,10 +285,9 @@ article p a:focus{
     }
 
     article {
-        width: 40rem;
         margin: 0rem 3rem 0rem 0rem;
         height: 20rem;
-        width: 30rem;
+        width: 35rem;
     }
 
     .imagen3 {
@@ -312,3 +311,4 @@ article p a:focus{
         width: 6rem;
     }
 }
+
