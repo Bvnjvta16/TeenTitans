@@ -264,6 +264,7 @@ article p a:focus{
         width: 40rem;
         height: 40rem;
         margin: 0rem;
+        margin: 0rem 0rem 2rem 0rem;
     }
 
     .titulo {
@@ -310,5 +311,6 @@ article p a:focus{
         width: 6rem;
     }
 }
+
 
 
