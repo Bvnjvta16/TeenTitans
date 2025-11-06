@@ -69,8 +69,7 @@ body {
 
 .casa:hover {
     color: #00cccc;
-    transform: scale(1.2);
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 
 .casa:active {
@@ -311,4 +310,5 @@ article p a:focus{
         width: 6rem;
     }
 }
+
 
