@@ -28,7 +28,7 @@
       background-color: #b40000;
       padding: 10px 20px;
     }
-    
+
     .logo {
       font-weight: bold;
     }
@@ -55,9 +55,6 @@
 
     nav ul li a:target {
       color: green;
-    }
-    nav ul li a:focus {
-      color: green
     }
 
   .logo > img {
@@ -196,9 +193,9 @@
 
   .abajo-web {
     background-color: #ff2d2d;
-    height: 40rem;
+    height: 20rem;
     font-family: var(--fuente-heroes);  
-    font-size: 20rem;
+    font-size: 10rem;
     text-align: center;
   }
 
@@ -227,7 +224,52 @@
   .parrafo-raven {
     color: #aa00aa;
   }
+.titulo-imagen {
+  text-align: center;
+  background-color: black;
+  padding-top: 4rem;
+}
 
+.galeria {
+  padding: 4rem 2rem;
+  background-color: black;
+}
+  .galeria-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+    align-items: stretch;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .galeria-imagen {
+    flex: 1 1 18rem;
+    max-width: 30rem;
+    min-width: 14rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .galeria-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease, filter 0.35s ease;
+  }
+
+  .galeria-imagen:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.03);
+  }
 
 
 
@@ -239,12 +281,14 @@
     background-attachment: fixed;
     height: 14rem;
   }
+
   @media screen and (max-width: 1024px){
     .abajo-web {
       height: 60rem;
     }
     
   }
+
   @media screen and (max-width: 768px) { 
     .low-nav {
       background-image: url(../img/foto_negro.jpg);
@@ -333,6 +377,18 @@
 
   }
 
+  @media screen and (max-width: 480px){
+    .galeria {
+      padding: 2rem 1rem;
+    }
+
+    .galeria-imagen {
+      flex-basis: 14rem;
+      max-width: 18rem;
+    }
+    
+  }
+
   @media screen and (max-width: 320px){
     .titulo-descripcion > img {
       width: 24rem;
@@ -350,40 +406,6 @@
 
 
 
-/*Fuente*/
-
-
-
-  .rajdhani-light {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .rajdhani-regular {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .rajdhani-medium {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .rajdhani-semibold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .rajdhani-bold {
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
 
 
 
