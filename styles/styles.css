@@ -57,6 +57,8 @@
       color: green;
     }
 
+    
+
   .logo > img {
       width: 4.8rem;
   }
@@ -193,7 +195,7 @@
 
   .abajo-web {
     background-color: #ff2d2d;
-    height: 20rem;
+    height: 100%;
     font-family: var(--fuente-heroes);  
     font-size: 10rem;
     text-align: center;
@@ -284,8 +286,9 @@
 
   @media screen and (max-width: 1024px){
     .abajo-web {
-      height: 60rem;
+      height:100%;
     }
+  
     
   }
 
@@ -329,7 +332,7 @@
 
     .abajo-web {
       font-size: 4rem;
-      height: 10rem;
+      height: 100%;
     }
 
     .personaje {
@@ -386,6 +389,10 @@
       flex-basis: 14rem;
       max-width: 18rem;
     }
+
+    .abajo-web {
+      height: 100%;
+    }
     
   }
 
@@ -397,7 +404,15 @@
     p {
       max-width: 40rem;
     }
+
+    .abajo-web {
+      height: 100%;
+    }
   }
+
+
+
+
 
 
 
